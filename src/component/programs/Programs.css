@@ -1,0 +1,81 @@
+.programs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.programs-header{
+    display: flex;
+    gap: 5rem;
+    font-size: 3rem;
+    font-weight: bold;
+    justify-content: center;
+    color: white;
+    font-style: italic;
+}
+
+.programs-categories{
+    display: flex;
+    gap: 1rem;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: gray;
+    color: white;
+    justify-content: space-between;
+}
+
+.category>:nth-child(1){
+    width: 2rem;
+    height: 2rem;
+    fill: white;
+}
+
+.category>:nth-child(2){
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.category>:nth-child(3){
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+.join-now{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.join-now>span{
+    font-size: 0rem;
+}
+
+.aeroimg{
+    width: 1.5rem;
+    padding-left: 10px;
+}
+
+.category:hover{
+    background: var(--planCard);
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .programs-header{
+        flex-direction: column;
+        gap: 1rem;
+        font-size: x-large;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .programs-categories{
+        flex-direction: column;
+    }
+}
